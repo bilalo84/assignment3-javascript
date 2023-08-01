@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 JavaScript</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-success">
+  
+
+    <div class="container my-5 text-center ">
+
+      <div class="group m-auto w-75 p-5 bg-danger bg-gradient shadow-lg">
+
+        <h1 class="text-success">Smart Login System</h1>
+
+        <input class="w-100 my-3 form-control" type="text" placeholder="Enter your email" id="logEmail">
+        <input class="w-100 form-control" type="password" placeholder="Enter your password" id="logPass">
+
+        <p id="incorrect" class="bg-warning my-3  d-none "><span class="p-2 fs-4 text-danger">incorrect email or password</span></p>
+
+        <button onclick="loginValid()" class="btn btn-success w-100 my-3" >Login</button>
+        <p class="text-white">Don’t have an account?  <a class="text-secondary-emphasis" href="signup.html">Sign Up</a></p>
+
+      </div>
+
+    </div>
+
+
+</body>
+    <script src="js/main.js"></script>
+  </body>
+</html>

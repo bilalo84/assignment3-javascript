@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 JavaScript - Sign Up</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-success">
+  
+
+    <div class="container my-5 text-center ">
+
+      <div class="group m-auto w-75 p-5 bg-danger bg-gradient shadow-lg">
+
+        <h1 class="text-success">Smart Login System</h1>
+
+        <input class="w-100 my-3 form-control" type="text" placeholder="Enter your name" id="signName">
+        <input class="w-100 my-3 form-control" type="text" placeholder="Enter your email" id="signEmail">
+        <div id="validationServerUsernameFeedback" class="invalid-feedback text-white text-start bg-success p-3 mb-4 rounded-3 ">
+          A valid email address consists of an email prefix and an email domain, both in acceptable formats. The prefix appears to the left of the @ symbol. The domain appears to the right of the @ symbol. For example, in the address example@mail.com, "example" is the email prefix, and "mail.com" is the email domain.
+        </div>
+        <input class="w-100 form-control" type="password" placeholder="Enter your password" id="signPass">
+       
+        <p id="exist" class="mt-3 bg-warning d-none"><span class="text-danger fs-4 ">email already exists</span></p>
+        <button  onclick="addNewuser()"   class="btn btn-success w-100 my-3" >Sign up</button>
+        <p class="text-white">You have an account? <a class="text-secondary-emphasis" href="index.html">Login</a></p>
+
+      </div>
+
+    </div>
+
+
+</body>
+    <script src="js/main.js"></script>
+  </body>
+</html>
